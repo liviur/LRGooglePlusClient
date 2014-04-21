@@ -3,7 +3,7 @@
 ## Intro
 LRGoogle Plus Client was created to simplify the integration of Google Plus framework into an iOS App.
 
-Since the Google documentation is pretty extensive, but not always that clear - I went onwards to creating a simpler solution - a singleton class that does anything from logging in , one line sharing and properly notifying you on various events.
+Since the Google documentation is pretty extensive, but not always that clear - I went onwards with creating a simpler solution - a singleton class that does anything from logging in , one line sharing and properly notifying you on various events.
 
 I find this solution much easier to implement and maintain as it also removes a lot of the overhead when copying this solution from project to project.
 
@@ -15,9 +15,11 @@ This version has currently been tested against Google Plus SDK 1.5.1
 ## Integration
 1. Copy LRGooglePlusClient into your project
 2. Either download (https://developers.google.com/+/mobile/ios/) drag the Google plus library into your project or - in case of using CocoaPods (http://www.cocoapods.org) add the following line into your PodFile:
+
 	```
 		pod 'google-plus-ios-sdk', '~> 1.5'
 	```
+	
 3. Follow the instructions to create a Google Plus App (Steps 1-3):
 	https://developers.google.com/+/mobile/ios/getting-started
 4. Write down the Client ID of your specific app from:
@@ -25,21 +27,28 @@ This version has currently been tested against Google Plus SDK 1.5.1
     Go to the old version -> API Access
 5. In the App Delegate add the following:
 	- Import LRGooglePlusClient Header:
+
 		```objective-c
 			#import "LRGooglePlusClient.h"
 		```
+		
     - Start up shared instance with the client ID:
+    
     	```objective-c
         	[[LRGooglePlusClient sharedInstance] setClientID:<client id>];
         ```
+        
     - Add the following method to handle URL scheme and SSO:
+    
     	```objective-c
         	- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
 			{
 			    return [[LRGooglePlusClient sharedInstance] application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
 			}
         ```
+        
     - If you have more then one URL scheme handling component you can instead use the following snippet to ease integration:
+    
     	```objective-c
             - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
             {
@@ -50,6 +59,7 @@ This version has currently been tested against Google Plus SDK 1.5.1
                 }
             }
         ```
+        
 And ... That's it - you finished your integration and are ready to start sharing.
 
 ## Usage guide
