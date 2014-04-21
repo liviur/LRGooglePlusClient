@@ -3,7 +3,7 @@
 ## Intro
 LRGoogle Plus Client was created to simplify the integration of Google Plus framework into an iOS App.
 
-Since the Google documentation is pretty extensive, but not always that clear - I went onwards to creating a simpler solution - a singleton class that does anything from loging in , one line sharing and properly notifying you on various events.
+Since the Google documentation is pretty extensive, but not always that clear - I went onwards to creating a simpler solution - a singleton class that does anything from logging in , one line sharing and properly notifying you on various events.
 
 I find this solution much easier to implement and maintain as it also removes a lot of the overhead when copying this solution from project to project.
 
@@ -14,7 +14,7 @@ This version has currently been tested against Google Plus SDK 1.5.1
 
 ## Integration
 1. Copy LRGooglePlusClient into your project
-2. Either download (https://developers.google.com/+/mobile/ios/) drag the Google plus libray into your project or - in case of using CocoaPods (http://www.cocoapods.org) add the following line into your PodFile:
+2. Either download (https://developers.google.com/+/mobile/ios/) drag the Google plus library into your project or - in case of using CocoaPods (http://www.cocoapods.org) add the following line into your PodFile:
 	```
 		pod 'google-plus-ios-sdk', '~> 1.5'
 	```
@@ -39,7 +39,7 @@ This version has currently been tested against Google Plus SDK 1.5.1
 			    return [[LRGooglePlusClient sharedInstance] application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
 			}
         ```
-    - If you have more then one URL scheme handling component you can instead use the following snipet to ease integration:
+    - If you have more then one URL scheme handling component you can instead use the following snippet to ease integration:
     	```objective-c
             - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
             {
@@ -54,7 +54,7 @@ And ... That's it - you finished your integration and are ready to start sharing
 
 ## Usage guide
 Before going into the sharing methods - you might note there are sign in , sign out and disconnect methods.
-While those methods exist to simplify the usage and give you the opertunity to present relevant UI - if you try to share without loging in - it will simply save the share data until a succesful login has happened.
+While those methods exist to simplify the usage and give you the opportunity to present relevant UI - if you try to share without logging in - it will simply save the share data until a successful login has happened.
 
 ### signIn
 Sign in with Google plus method.
@@ -63,7 +63,7 @@ Sign in with Google plus method.
 Sign out current user from Google Plus.
 
 ### disconnect
-Differes from sign out by also removing the application authorization and completly diconnecting the user from the Google App.
+Differs from sign out by also removing the application authorization and completely disconnecting the user from the Google App.
 
 ### shareWithURL:andPrefillText:
 Share a URL and text.
@@ -75,7 +75,7 @@ Do note - the URL information overrides the rest of the fields.
 
 ### shareWithDictionary:
 This share method is basically here mainly to be used after a sign in.
-In case a user tried sharing and was not signed in - The LLGooglePlusClient serializes the sharing info into a dictionary and uses it after a succesfull sign in in order to restore the sharing request.
+In case a user tried sharing and was not signed in - The LLGooglePlusClient serializes the sharing info into a dictionary and uses it after a successful sign in in order to restore the sharing request.
 
 ## Notifications
 To simplify understanding the current state of actions and to ease adding various analytics around actions - I created a few notifications to better understand the flow and lifecycle of the Google Plus Client:
