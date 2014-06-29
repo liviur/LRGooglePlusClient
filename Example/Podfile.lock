@@ -1,0 +1,23 @@
+PODS:
+  - Expecta (0.3.0)
+  - google-plus-ios-sdk (1.5.1)
+  - LRGooglePlusClient (0.1.0):
+    - google-plus-ios-sdk (~> 1.5)
+  - Specta (0.2.1)
+
+DEPENDENCIES:
+  - Expecta
+  - LRGooglePlusClient (from `../`)
+  - Specta (~> 0.2.1)
+
+EXTERNAL SOURCES:
+  LRGooglePlusClient:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Expecta: ce8a51b9fad15a2cd573b291cb2909aaed865350
+  google-plus-ios-sdk: 98d76ce1f1edbfe8730628aafe017301a734042c
+  LRGooglePlusClient: 4b320fd2371ba747e6a170a1f2edd885635303bd
+  Specta: 9141310f46b1f68b676650ff2854e1ed0b74163a
+
+COCOAPODS: 0.33.1

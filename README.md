@@ -1,5 +1,10 @@
 # LRGooglePlusClient
 
+[![CI Status](http://img.shields.io/travis/liviur/LRGooglePlusClient.svg?style=flat)](https://travis-ci.org/liviur/LRGooglePlusClient)
+[![Version](https://img.shields.io/cocoapods/v/LRGooglePlusClient.svg?style=flat)](http://cocoadocs.org/docsets/LRGooglePlusClient)
+[![License](https://img.shields.io/cocoapods/l/LRGooglePlusClient.svg?style=flat)](http://cocoadocs.org/docsets/LRGooglePlusClient)
+[![Platform](https://img.shields.io/cocoapods/p/LRGooglePlusClient.svg?style=flat)](http://cocoadocs.org/docsets/LRGooglePlusClient)
+
 ## Intro
 LRGoogle Plus Client was created to simplify the integration of Google Plus framework into an iOS App.
 
@@ -14,12 +19,12 @@ This version has currently been tested against Google Plus SDK 1.5.1
 
 ## Integration
 1. Copy LRGooglePlusClient into your project
-2. Either download (https://developers.google.com/+/mobile/ios/) drag the Google plus library into your project or - in case of using CocoaPods (http://www.cocoapods.org) add the following line into your PodFile:
+2. Either download (https://developers.google.com/+/mobile/ios/) drag the Google plus library into your project or 
+LRGooglePlusClient is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
 
-	```
-		pod 'google-plus-ios-sdk', '~> 1.5'
-	```
-	
+    pod "LRGooglePlusClient"
+
 3. Follow the instructions to create a Google Plus App (Steps 1-3):
 	https://developers.google.com/+/mobile/ios/getting-started
 4. Write down the Client ID of your specific app from:
@@ -101,3 +106,12 @@ This notification is sent when Google Plus did Logout.
 
 ### LRGooglePlusDidNotLoginNotification
 This notification is sent when Google Plus didn't manage to Login.
+
+
+## Author
+
+Liviu Romascanu, livius16@gmail.com
+
+## License
+
+LRGooglePlusClient is available under the MIT license. See the LICENSE file for more info.
