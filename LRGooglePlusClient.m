@@ -8,7 +8,11 @@
 
 
 #import "LRGooglePlusClient.h"
+#ifdef COCOAPODS
+#import <google-plus-ios-sdk/GoogleOpenSource.h>
+#else
 #import <GoogleOpenSource/GoogleOpenSource.h>
+#endif
 
 NSString *const LRGooglePlusShareNotification = @"LRGooglePlusShareNotification";
 NSString *const LRGooglePlusDidLoginNotification = @"LRGooglePlusDidLoginNotification";
