@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "LRGooglePlusClient"
-  s.version          = "0.1.0"
+  s.version          = "1.1.0"
   s.summary          = "Simple Google Plus client - 2 files that will make integrating Google plus a breeze."
   s.description      = <<-DESC
                        LRGoogle Plus Client was created to simplify the integration of Google Plus framework into an iOS App.
