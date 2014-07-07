@@ -15,7 +15,7 @@ I find this solution much easier to implement and maintain as it also removes a 
 The less code you duplicate and write - the less bugs you will have.
 
 ### Google Plus SDK version:
-This version has currently been tested against Google Plus SDK 1.5.1
+This version has currently been tested against Google Plus SDK 1.5.1 and 1.7.0
 
 ## Integration
 1. Copy LRGooglePlusClient into your project
