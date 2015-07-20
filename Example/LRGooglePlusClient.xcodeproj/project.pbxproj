@@ -16,7 +16,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		10BE0DFDF24E465B8F58586A /* Pods-LRGooglePlusClient.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LRGooglePlusClient.xcconfig"; path = "Pods/Pods-LRGooglePlusClient.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LRGooglePlusClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LRGooglePlusClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -27,9 +26,11 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		72247FFD63796F981FD93868 /* Pods-LRGooglePlusClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LRGooglePlusClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-LRGooglePlusClient/Pods-LRGooglePlusClient.release.xcconfig"; sourceTree = "<group>"; };
 		8783D74F3C8F4A0DB0530881 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A11BAF6268C1450BBF935ABC /* libPods-LRGooglePlusClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LRGooglePlusClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD5AC36013B34E679D2130CD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DC5522F093A9C94079317401 /* Pods-LRGooglePlusClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LRGooglePlusClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LRGooglePlusClient/Pods-LRGooglePlusClient.debug.xcconfig"; sourceTree = "<group>"; };
 		DCA02A5714B74C4982E235C5 /* LRGooglePlusClient.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LRGooglePlusClient.podspec; path = ../LRGooglePlusClient.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,7 +56,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				10BE0DFDF24E465B8F58586A /* Pods-LRGooglePlusClient.xcconfig */,
+				9D3C43B209E62BD77F86204E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +108,15 @@
 				8783D74F3C8F4A0DB0530881 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		9D3C43B209E62BD77F86204E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC5522F093A9C94079317401 /* Pods-LRGooglePlusClient.debug.xcconfig */,
+				72247FFD63796F981FD93868 /* Pods-LRGooglePlusClient.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,7 +198,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-LRGooglePlusClient-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LRGooglePlusClient/Pods-LRGooglePlusClient-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		73FE7E5DF3A2491EB7142A3A /* Check Pods Manifest.lock */ = {
@@ -305,7 +315,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10BE0DFDF24E465B8F58586A /* Pods-LRGooglePlusClient.xcconfig */;
+			baseConfigurationReference = DC5522F093A9C94079317401 /* Pods-LRGooglePlusClient.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -327,7 +337,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10BE0DFDF24E465B8F58586A /* Pods-LRGooglePlusClient.xcconfig */;
+			baseConfigurationReference = 72247FFD63796F981FD93868 /* Pods-LRGooglePlusClient.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
