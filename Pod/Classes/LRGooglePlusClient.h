@@ -7,12 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-#ifdef COCOAPODS
-#import <google-plus-ios-sdk/GooglePlus.h>
-#else
 #import <GooglePlus/GooglePlus.h>
-#endif
 
 /** This notification is called when the Google Plus share is successfully sent. */
 extern NSString * const LRGooglePlusShareNotification;
